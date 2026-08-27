@@ -27,7 +27,10 @@ export const config = {
     xTitle: 'Smart Model Router Gateway',
     port: 3001,
     host: '0.0.0.0',
-    models: [],
+    models: [
+        'nvidia/nemotron-3-ultra-550b-a55b:free',
+        'minimax/minimax-m2.7:free',
+    ],
     temperature: 0.7,
     maxTokens: 50,
     systemPrompt: 'You are a helpful assistant.',
