@@ -15,5 +15,8 @@ export function buildGraphPipeline(openRouterService: OpenRouterService) {
     )
     .addEdge('agent', END)
 
-    .compile();
+    .compile()
+    .withConfig({
+      recursionLimit: 50,
+    });
 }
